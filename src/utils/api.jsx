@@ -15,9 +15,6 @@ export const fetchAPIData = async (url) => {
 }
 
 export const randomUserAPI = async () => {
-    // const req = await fetch('https://randomuser.me/api/')
-    // return req.json();
-    // setRandomUser(res.results[0].picture.thumbnail);
     const { data } = await axios.get('https://randomuser.me/api/')
     return data
 }

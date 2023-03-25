@@ -25,11 +25,9 @@ export const AppContext = ({ children }) => {
     }
 
     const fetchRandomUserPic = () => {
-        randomUserAPI().then((res) => {
-            setRandomUser(res?.results[0]?.picture?.thumbnail)
-        })
+        randomUserAPI().then(res => setRandomUser(res?.results[0]?.picture?.thumbnail))
     }
-    
+
     return (
         <Context.Provider value={{
             loading,
