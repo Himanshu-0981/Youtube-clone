@@ -20,6 +20,7 @@ export const AppContext = ({ children }) => {
         fetchAPIData(`search/?q=${query}`).then(({ contents }) => {
             console.log(contents);
             setSearchResult(contents)
+            console.log(contents);
             setLoading(false)
         })
     }
