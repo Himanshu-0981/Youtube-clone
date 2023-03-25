@@ -5,7 +5,7 @@ export const Context = createContext();
 
 export const AppContext = ({ children }) => {
     const [loading, setLoading] = useState(false);
-    const [searchResult, setSearchResult] = useState(false);
+    const [searchResult, setSearchResult] = useState([]);
     const [selectCategories, setSelectCategories] = useState("New");
     const [mobileMenu, setMobileMenu] = useState(false);
     const [randomUser, setRandomUser] = useState("")
