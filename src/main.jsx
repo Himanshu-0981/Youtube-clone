@@ -5,7 +5,6 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <p className="text-blue-800">Hello world</p>
     <App />
   </React.StrictMode>,
 )
